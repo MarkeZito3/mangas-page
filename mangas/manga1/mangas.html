@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manga y Manhwa</title>
+    <link rel="stylesheet" href="../../css/global-styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <a href="../../index.html">
+            <img src="/media/img/logo.png" alt="Logo de la página :v">
+        </a>
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Buscar...">
+        <button>Buscar</button>
+    </div>
+    <div class="register-btn">
+        <button>Register</button>
+    </div>
+</header>
+
+<!-- acá va las imágenes de manga, que se van deslizando de derecha a izquierda -->
+
+<div class="pages-btn">
+    <button class="prev" id="scroll-left-btn">Anterior</button>
+    <button class="next" id="scroll-right-btn">Siguiente</button>
+</div>
+<div class="container">
+    <div class="manga-container">
+        <img src="/mangas/manga1/img/manga1.jpg" alt="Manga 1">
+        <img src="/mangas/manga1/img/manga2.jpg" alt="Manga 2">
+        <img src="/mangas/manga1/img/manga3.jpg" alt="Manga 3">
+    </div>
+</div>
+
+<div class="pages-btn">
+    <button class="prev" id="scroll-left-btn-2">Anterior</button>
+    <button class="next" id="scroll-right-btn-2">Siguiente</button>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer>
+    <p>Proyecto de <a href="https://www.instagram.com/lol_latinoamerica_sur_/">@lol_latinoamerica_sur_</a> en Instagram | Todos los derechos reservados</p>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const scrollContainer = document.querySelector('.manga-container');
+        const scrollLeftBtn = document.getElementById('scroll-left-btn');
+        const scrollRightBtn = document.getElementById('scroll-right-btn');
+        const scrollLeftBtn2 = document.getElementById('scroll-left-btn-2');
+        const scrollRightBtn2 = document.getElementById('scroll-right-btn-2');
+        
+        scrollLeftBtn.addEventListener('click', function() {
+            scrollContainer.scrollLeft -= 1000;
+        });
+        
+        scrollRightBtn.addEventListener('click', function() {
+            scrollContainer.scrollLeft += 1000;
+        });
+        
+        scrollLeftBtn2.addEventListener('click', function() {
+            scrollContainer.scrollLeft -= 1000;
+        });
+        
+        scrollRightBtn2.addEventListener('click', function() {
+            scrollContainer.scrollLeft += 1000;
+        });
+    });
+</script>
+
+</body>
+</html>

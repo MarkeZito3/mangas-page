@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.manga-container {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.manga-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: left 0.01s linear; /* Ajusta la duración de la transición según tu preferencia */
+}
