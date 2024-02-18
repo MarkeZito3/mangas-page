@@ -1,0 +1,10 @@
+.center-text{
+    text-align: center;
+}
+
+.container-mangas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Opcional: ajusta la altura según sea necesario */
+}

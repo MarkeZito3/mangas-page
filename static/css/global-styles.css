@@ -13,6 +13,11 @@ header {
     justify-content: space-between;
 }
 
+.logo-navbar {
+    width: 140px;
+    height: 85px;
+  }
+
 .logo img {
     height: 50px;
 }
@@ -64,9 +69,9 @@ header {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
     text-align: center;
     position: fixed;
     bottom: 0;
