@@ -2,9 +2,22 @@
     text-align: center;
 }
 
-.container-mangas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Opcional: ajusta la altura según sea necesario */
+.container .row div a img{
+    position:relative;
+    transform: scale(1);
+    transition: .3s;
+}
+
+.container .row div a img:hover {
+    transform: scale(1.1);
+}
+
+.container .row div a label {
+    position: inherit;
+    transform: scale(1);
+    transition: .3s;
+}
+
+.container .row div a:hover label {
+    transform: scale(0);
 }
