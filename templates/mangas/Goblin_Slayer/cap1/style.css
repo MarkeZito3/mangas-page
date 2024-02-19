@@ -1,0 +1,19 @@
+.manga-container{
+    aspect-ratio: 10 / 16;
+    width: 900px;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
+.manga-container img{
+    width: 100%;
+    left: 0;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-align: center;
+}
+::-webkit-scrollbar {
+    display: none;
+}
